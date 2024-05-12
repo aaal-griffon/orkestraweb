@@ -1,0 +1,39 @@
+body {
+    font-family: 'Montserrat';font-size: 4vh;
+}
+.yazi{
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center;
+    margin-top: 10vh;
+}
+.yazi h1{
+    text-align: center;
+} 
+.sef{
+    display: inline-block;
+    margin-left: 10vh;
+}
+.sef p{
+        display: flex;
+        justify-content: center; /* Yatay ortalama */
+        align-items: center;
+        margin-top:-5vh ;
+        margin-left: 10vh;
+}
+@media (max-width: 700px){
+    .yazi{
+
+        margin-top: 5vh;
+    }
+    .sef{
+        display: inline-block;
+        margin-left: 2vh;
+    }
+    .sef p{
+        font-size: 2vh;
+
+        margin-top:-4vh ;
+        margin-left: 4vh;
+}
+}
