@@ -1,39 +1,64 @@
 body {
-    font-family: 'Montserrat';font-size: 4vh;
+    font-family: 'Montserrat';
+    font-size: 4vh;
 }
-.yazi{
+
+.yazi {
     display: flex;
-    justify-content: center; /* Yatay ortalama */
+    justify-content: center;
+    /* Yatay ortalama */
     align-items: center;
     margin-top: 10vh;
+    color: #d7c2b8;
 }
-.yazi h1{
+
+.yazi h1 {
     text-align: center;
-} 
-.sef{
-    display: inline-block;
+}
+
+.sef {
+    display: flex;
+    flex-direction: column;
     margin-left: 10vh;
+    padding: 10px;
+    background-color: #282523;
+    border-radius: 3vh;
 }
-.sef p{
-        display: flex;
-        justify-content: center; /* Yatay ortalama */
-        align-items: center;
-        margin-top:-5vh ;
-        margin-left: 10vh;
-}
-@media (max-width: 700px){
-    .yazi{
 
-        margin-top: 5vh;
+.sef p {
+
+}
+
+.bg-dark-custom {
+    background-color: #574236;
+}
+
+@media (max-width: 700px) {
+    .yazi {
+
+        margin-top: 11vh;
     }
-    .sef{
-        display: inline-block;
+
+    .yazi h1 {
+        
+        font-size: 5vh;
+    }
+
+    .sef {
+
         margin-left: 2vh;
-    }
-    .sef p{
-        font-size: 2vh;
+        color: #d7c2b8;
 
-        margin-top:-4vh ;
-        margin-left: 4vh;
-}
+    }
+    .sef h3{
+        display: flex;
+        justify-content: center;
+        /* Yatay ortalama */
+        align-items: center;
+        font-size: 4vh;
+    }
+    .sef p {
+        font-size: 2vh;
+        color: #d7c2b8;
+    }
 }
