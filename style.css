@@ -26,9 +26,6 @@ margin-top:6vh ;
     border-radius: 3vh;
 }
 
-.sef p {
-
-}
 .custom-card{
     background-color: #282523!important;
     border-color: #282523;
@@ -45,6 +42,9 @@ margin-top:6vh ;
     border-color: #282523!important;
     color: #d7c2b8!important;
     border-radius: 3vh!important;
+}
+.custom-btn p{
+    font-size: 10px!important;
 }
 .custom-btn:hover{
     border: 1px solid #d7c2b8!important;

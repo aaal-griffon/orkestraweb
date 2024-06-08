@@ -1,35 +1,61 @@
 $(document).ready(function() {
-    const songs = [
-      { title: "Şarkı 1", lyrics: "<br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde <br>İşte bir sabah erken masal böyle başlamış <br>Delikanlı, genç kıza iskelede rastlamış <br>Bakışmışlar göz göze, gören kimse olmamış <br>Fakat denizle dalga oynamaya başlamış <br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde <br>Delikanlı yaklaşmış Ne kadar güzelsiniz <br>Güzel kız uzaklaşmış Fakat siz de kimsiniz? <br>Ben bir erkek meleğim, bırak yanına geleyim <br>Elimi hiç sürmeden gözlerimle seveyim <br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde <br>Olamaz hayır hayır, annem çok kızar buna <br>Beni kenara ayır, git takıl şuna buna <br>Şayet beni istersen bize yolla anneni <br>Söz veriyorum sana, olacağım gelini <br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde <br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde <br>Oğlan buna inanmış, bir ok gibi yaylanmış <br>Evin yolunu tutup annesine yalvarmış <br>Koş git al kızı bana, delireceğim ana <br>Yoksa oğlun ölecek siyah gözler uğruna <br>Anne atlamış gitmiş içi titreyerekten <br>Güzel kız yağız açmış kapıyı gülerekten <br>Demiş Hanım geç kaldın, bak artık evlendim ben <br>Bekledim de gelmedin, yaya kaldın bu işten <br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde <br>Bak bir varmış bir yokmuş eski günlerde <br>Tatlı bir kız yaşarmış Boğaziçi'nde" },
-      { title: "Şarkı 2", lyrics: "Sözler 2..." },
+  const songs = [
+    { title: "Sarabande- Handel", lyrics: "" },
+    { title: "Tuna Dalgaları- Ivanovici", lyrics: "Sözler 2..." },
 
-      { title: "Şarkı 3", lyrics: "Sözler 3..." },
-      { title: "Şarkı 4", lyrics: "Sözler 2..." },
-    
-      { title: "Şarkı 1", lyrics: "Sözler 1..." },
-      { title: "Şarkı 2", lyrics: "Sözler 2..." },
-    
-      { title: "Şarkı 1", lyrics: "Sözler 1..." },
-      { title: "Şarkı 2", lyrics: "Sözler 2..." }    ];
+    { title: "Nihavend Potpuri", lyrics: "" },
+    { title: "Kara Sevda- Toygar Işıklı", lyrics: "" },
   
-      const songContainer = $('<div class="container"></div>'); // Kapsayıcı bir div eklendi
-      $('music').append(songContainer); // Kapsayıcıyı body'e ekle
-    
-      songs.forEach((song, index) => {
-        const songElement = $(`
-          <div class="mb-3"> 
-            <button class="btn custom-btn  btn-block" type="button" data-toggle="collapse" data-target="#collapseLyrics${index}" aria-expanded="false" aria-controls="collapseLyrics${index}">
-              ${song.title}
-            </button>
-            <div class="collapse" id="collapseLyrics${index}">
-              <div class="card custom-card card-body mt-2">
-                ${song.lyrics}
-              </div>
+    { title: "Waltz in C-sharp Minor – Chopin", lyrics: "" },
+    { title: "Ballade No.1 in G Minor – Chopin", lyrics: "" },
+  
+    { title: "La Cumparsita - Gerardo Matos Rodríguez", lyrics: "" },
+    { title: "Il Pastorre Svizzero- Pietro Morlachi", lyrics: "" },
+    { title: "Concerto For 2 Violins in A Minor – Vivaldi", lyrics: "" },
+    { title: "Yürek – Duman", lyrics: "" },
+  
+    { title: "Bak Bir Varmış Bir Yokmuş - İlham Gençer", lyrics: "Bak bir varmış bir yokmuş eski<br> günlerde Tatlı bir kız yaşarmış<br> Boğaziçi'nde<br> İşte bir sabah erken masal böyle<br> başlamış<br> Delikanlı, genç kıza iskelede<br> rastlamış Bakışmışlar göz<br> göze, gören kimse olmamış<br> Fakat denizle dalga oynamaya<br> başlamış<br> Bak bir varmış bir yokmuş eski<br> günlerde Tatlı bir kız yaşarmış<br> Boğaziçi'nde<br> Delikanlı yaklaşmış 'Ne kadar<br> güzelsiniz' Güzel kız<br> uzaklaşmış 'Fakat siz de<br> kimsiniz?' Ben bir erkek<br> meleğim, bırak yanına geleyim<br> Elimi hiç sürmeden gözlerimle<br> seveyim<br> Bak bir varmış bir yokmuş eski<br> günlerde Tatlı bir kız yaşarmış<br> Boğaziçi'nde<br> Olamaz hayır hayır, annem<br> çok kızar buna Beni kenara<br> ayır, git takıl şuna buna<br> Şayet beni istersen bize yolla<br> anneni Söz veriyorum sana,<br> olacağım gelini<br> Bak bir varmış bir yokmuş eski<br> günlerde<br> Tatlı bir kız yaşarmış<br> Boğaziçi'nde Bak bir varmış<br> bir yokmuş eski günlerde Tatlı<br> bir kız yaşarmış Boğaziçi'nde<br> Oğlan buna inanmış, bir ok gibi<br> yaylanmış Evin yolunu tutup<br> annesine yalvarmış Koş git al<br> kızı bana, delireceğim ana<br> Yoksa oğlun ölecek siyah gözler<br> uğruna<br> Anne atlamış gitmiş içi<br> titreyerekten Güzel kız yağız<br> açmış kapıyı gülerekten<br> Demiş 'Hanım geç kaldın, bak<br> artık evlendim ben' 'Bekledim<br> de gelmedin, yaya kaldın bu<br> işten'<br> Bak bir varmış bir yokmuş eski<br> günlerde Tatlı bir kız yaşarmış<br> Boğaziçi'nde Bak bir varmış<br> bir yokmuş eski günlerde Tatlı<br> bir kız yaşarmış<br> Boğaziçi'nde<br>" },
+    { title: "Life Is Life – Opus", lyrics: "Life La la la la<br> la Life is life La<br> la la la la<br> Labadapdapdap life<br> La la la la la<br> Life is life<br> When we all give the power<br> We all give the best<br> Every minute of an hour<br> Don't think about a rest<br> Then you all get the power<br> You all get the best<br> And everyone gives everything<br> And every song everybody sings<br> Then it's life La<br> la la la la Life is<br> life La la la la la<br> Life - is life<br> La la la la la<br> Labadabadapdap life<br> La la la la la<br> Live is life, when we all feel the<br> power Live is life, come on,<br> stand up and dance<br> Live is life, when the feeling of<br> the people<br> Live is life, is the feeling of the<br> band, yeah When we all give<br> the power We all give the best<br> Every minute of an hour<br> Don't think about a rest<br> Then you all get the power<br> You all get the best<br> And everyone gives everything<br> And every song everybody sings<br> Then it's life La la la la la Life is<br> life<br> La la la la la<br> Life - is life<br> La la la la la<br> Labadabadapdap life<br> La la la la la<br> And you call when it's over<br> You call it should last<br> Every minute of the future<br> Is a memory of the past<br> 'Cause we all gave the power<br> We all gave the best<br> And everyone gave everything<br> And every song everybody sang<br> Live is life<br>" },
+  
+    { title: "Perhaps / Quizas /Senden Benden Bizden", lyrics: "You won't admit you love me<br> And so how am I ever to know?<br> You always tell me<br> Perhaps, perhaps, perhaps<br> Y así pasan los días<br> Y yo desesperando<br> Y tu, tu contestando<br> Quizás, quizás, quizás<br> If you can't make your mind up<br> We'll never get started<br> And I don't wanna wind up<br> Being parted, broken-hearted<br> Y así pasan los días<br> Y yo desesperando<br> Y tu, tu contestando<br> Quizás, quizás, quizás<br> Trompet solosu<br> Senden, benden, bizden<br> Eğer dansetmek istersen kırık<br> kalpler salonunda<br> Bana hiç bir zaman dönme<br> arkadaşça ya da dostça<br> Beni gerçekten sevdiysen söyle<br> Asla hayır deme Herkese bahset<br> senden, benden, bizden<br> Senden, benden, bizden<br> Senden, benden bizden<br>" },
+    { title: "2 Arabesques :Arabesque No.1", lyrics: "" },
+    { title: "Mazi Kalbimde Bir Yaradır – Dilek Türkan", lyrics: "Ben de gönül çektim eskiden<br> Yandı hayatım bu sevgiden<br> Anladım ki bir aşka bedel<br> Gençliğimmiş elimden giden<br> Önünde ben geldim de dize<br> Yar olmadı bu kimse bize<br> En nihayet düşüp can verdim<br> Gözündeki yeşil denize<br> Sarmadımsa da belden,<br> geçmedim bu emelden Bir<br> hazin maceradır onu aldılar<br> elden<br> Başkasına yar oldu, eller bahtiyar<br> oldu Gönlüm hep baştan başa<br> viran bir diyar oldu<br> Mazi kalbimde bir yaradır<br> Bahtım saçlarımdan karadır<br> Beni zaman zaman ağlatan<br> İşte bu hazin hatıradır<br> Ne göğsünde uyuttu beni<br> Ne buseyle avuttu beni<br> Geçti ardından uzun yıllar<br> O kadın da unuttu beni<br> Sarmadımsa da belden,<br> geçmedim bu emelden Bir<br> hazin maceradır onu aldılar<br> elden<br> Başkasına yar oldu, eller bahtiyar<br> oldu Gönlüm hep baştan başa<br> viran bir diyar oldu<br>" },
+    { title: "Nihavend Longa", lyrics: "" },
+  
+    { title: "Çökertme – Tolga Çandar", lyrics: "Çökertme'den çıktım da Halilim<br> aman başım selâmet<br> Çökertme'den çıktım da<br> Halilim aman başım selâmet<br> Bitez de yalısına varmadan<br> Halilim aman koptu kıyamet<br> Bitez de yalısına varmadan<br> Halilim aman koptu kıyamet<br> Arkadaşım İbram Çavuş Allahına<br> emanet Arkadaşım İbram Çavuş<br> Allahına emanet<br> Burası da Aspat değil Halilim<br> aman Bitez yalısı Ciğerime ateş<br> saldı aman kurşun yarası<br> Gidelim gidelim Halilim<br> Çökertme'ye varalım<br> Gidelim gidelim Halilim<br> Çökertme'ye varalım Kolcular<br> gelirse Halilim nerelere gaçalım<br> Kolcular gelirse Halilim nerelere<br> gaçalım<br> Teslim olmayalım Halilim aman<br> kurşun saçalım Teslim<br> olmayalım Halilim aman kurşun<br> saçalım Burası da Aspat değil<br> Halilim aman Bitez yalısı<br> Ciğerime ateş saldı aman<br> kurşun yarası<br>" },
+    { title: "Mustafam", lyrics: "şimdi çiçekler büyüyorsa<br> güneşli toprağında<br> şimdi çocuklar yürüyorsa<br> Işıklı yollarında.<br> Sensin, sensin ey<br> mustafa'm<br> gelensin,gelensin<br> Yurduma hürriyet verensin,<br> güneşi gösterensin.<br> şimdi kadınlar biliyorsa,<br> yarınlar kollarında.<br> şimdi yarınlar geliyorsa,<br> Işıklı yollarında.<br> Sensin, sensin ey<br> mustafa'm<br> gelensin,gelensin<br> Yurduma hürriyet verensin,<br> güneşi gösterensin.<br> Şimdi kırların arasında<br> Şehirler büyüyorsa<br> Şimdi güllerin arasında<br> Çocuklar gülüyorsa<br> Sensin, sensin ey<br> mustafa'm<br> gelensin,gelensin<br> Yurduma hürriyet verensin,<br> güneşi gösterensin.<br>" },
+  
+    { title: "Sonatin – Frederic Khlau ", lyrics: "" },
+    { title: "Düşler Sokağı – Feridun Düzağaç", lyrics: "Ben kuşlardan da küçüktüm bir<br> gece vaktiydi<br> Aşk tuttu elimden benim<br> Geçtim düşler sokağından bir<br> gece vaktiydi<br> Ceplerimde hacıyatmazlar<br> Ben kuşlardan da küçüktüm bir<br> gece vaktiydi<br> Aşk tuttu elimden benim<br> Geçtim düşler sokağından bir<br> gece vaktiydi<br> Ceplerimde hacıyatmazlar<br> Yağmur yağsa(yağmur yağsa)<br> Uykum kaçsa(uykum kaçsa)<br> Bir kuş konsa badi parmağıma<br> Ağlardım bir başıma<br> Bir kuş konsa badi parmağıma<br> Ağlardım bir başıma<br> Sevdadandır, sevdadandır<br> 'Sevdadandır' dedi annem,<br> 'aldırma'<br> 'Aldırma, gel yanıma'<br> 'Sevdadandır”dedi annem,<br> 'aldırma'<br> 'Aldırma, gel yanıma'<br> Kaç mevsim aşk pazarında geçti<br> yalanlarla<br> Düş sattım aldanmışlara<br> Aklım kaçıverdi elimden bir gece<br> vaktiydi<br> Sevdiğim başka sevenim başka<br> Kaç mevsim aşk pazarında geçti<br> yalanlarla<br> Düş sattım aldanmışlara<br> Aklım kaçıverdi elimden bir gece<br> vaktiydi<br> Sevdiğim başka sevenim başka<br> Yağmur yağsa(yağmur yağsa)<br> Uykum kaçsa(uykum kaçsa)<br> Bir kuş konsa badi parmağıma<br> Ağlardım bir başıma<br> Bir kuş konsa badi parmağıma<br> Ağlardım bir başıma<br> Sevdadandır, sevdadandır<br> 'Sevdadandır' dedi annem,<br> 'aldırma'<br> 'Aldırma, gel yanıma'<br> 'Sevdadandır' dedi annem,<br> 'aldırma'<br> 'Aldırma, gel yanıma'<br>" },
+    { title: "Sevdan Olmasa – Erol Evgin", lyrics: "Bende bu cehennem gibi yürek<br> olmasa<br> Bende deli rüzgâr gibi hasret<br> olmasa<br> Bir de cana can katan o sevdan<br> olmasa, sevdan olmasa<br> Bir de cana can katan o sevdan<br> olmasa, sevdan olmasa<br> Ah, bu hayat çekilmez<br> Ah, bu hayat çekilmez<br> Sen olmasan canım<br> Ah, bu çile çekilmez<br> Ah, bu hayat çekilmez (Ah, bu<br> hayat çekilmez)<br> Ah, bu hayat çekilmez (Ah, bu<br> hayat çekilmez)<br> Sen olmasan canım<br> Ah, bu çile çekilmez<br> Bende bitip tükenmeyen umut<br> olmasa<br> Ferhat'ın dağları delen sabrı<br> olmasa<br> Bir de cana can katan o sevdan<br> olmasa, sevdan olmasa<br> Bir de cana can katan o sevdan<br> olmasa, sevdan olmasa<br> Ah, bu hayat çekilmez<br> Ah, bu hayat çekilmez<br> Sen olmasan canım<br> Ah, bu çile çekilmez<br> Ah, bu hayat çekilmez (Ah, bu<br> hayat çekilmez)<br> Ah, bu hayat çekilmez (Ah, bu<br> hayat çekilmez)<br> Sen olmasan canım<br> Ah, bu çile çekilmez<br>" },
+    { title: "Bohemian Rhapsody – Quenn", lyrics: "Is this the real life? Is this just<br> fantasy? Caught in a landslide,<br> no escape from reality Open<br> your eyes, look up to the skies<br> and see I'm just a poor bo-oy, I<br> need no sympathy Because<br> I'm easy come, easy go, little<br> high, little low<br> Any way the wind blows doesn't<br> really matter to me, to me<br> Mama, just killed a man Put a<br> gun against his head, pulled<br> my trigger, now he's dead<br> Mama, life had just begun But<br> now I've gone and thrown it all<br> away Mama, ooh, (is this the<br> real life) didn't mean to make<br> you cry If I'm not back again<br> this time tomorrow Carry on,<br> carry on as if nothing really<br> matters<br> Too late, my time has come<br> Sends shivers down my spine,<br> body's aching all the time<br> Goodbye, everybody, I've got<br> to go Gotta leave you all<br> behind and face the truth<br> Mama, ooh (any way the wind<br> blows) I don't wanna die I<br> sometimes wish I'd never<br> been born at all -Gitar solosu-<br> I see a little silhouetto of a<br> man Scaramouche,<br> Scaramouche, will you do the<br> Fandango? Thunderbolt and<br> lightning, very, very<br> frightening me(burada normal<br> sesle devam ama heyya<br> grubu bi oktav inceden<br> söyleyecek) (Galileo) Galileo,<br> (Galileo) Galileo, Galileo<br> Figaro, magnifico-o--o-o -sus-<br> I'm just a poor boy, nobody<br> loves me He's just a poor boy<br> from a poor family Spare him<br> his life from this monstrosity<br> Easy come, easy go, will you let<br> me go? Bismillah No, we will not<br> let you go (let him go) Bismillah<br> We will not let you go<br> (let him go) Bismillah<br> We will not let you go (let me go)<br> Will not let you go (let me go)<br> Never, never, never, never let me<br> go<br> No, no, no, no, no, no, no<br> Oh, mamma mia, mamma mia<br> Mamma mia, let me go<br> Beelzebub has a devil put aside<br> for me, for me, for me(yine<br> heyya grubu bi oktav üstten<br> söylüyor)<br> So you think you can stone me<br> and spit in my eye? So you think<br> you can love me and leave me to<br> die? Oh, baby, can't do this to<br> me, baby Just gotta get out, just<br> gotta get right outta here<br> Ooh<br> Ooh, yeah, ooh, yeah<br> Nothing really matters,<br> anyone can see Nothing<br> really matters Nothing<br> really matters to me<br>" },
+  
+    { title: "Gibi Gibi – Barış Manço", lyrics: "Ben yaralı kurt, sen kınalı kuzu<br> Biraz cilve aşkın biberi tuzu<br> Sanki biraz naz ediyorsun ama<br> Senin bana gönlün var gibi gibi<br> Yüzüme karşı 'Git', diyorsun<br> ama<br> Sanki gözlerin 'Kal', der gibi gibi<br> Arpa buğday yan yana, orak<br> istemez<br> Yağız at şahlandı mı durak<br> dinlemez<br> Sanki biraz naz ediyorsun ama<br> Senin bana gönlün var gibi gibi<br> Yüzüme karşı 'Git', diyorsun<br> ama<br> Sanki gözlerin 'Kal', der gibi gibi<br> Yeter çektiğim i̇nsaf et gayri<br> Senin bana gönlün var gibi gibi<br> Zehirin şifası süt ile incir<br> Ellerim kelepçe, yüreğim zincir<br> Sen de biraz naz ediyorsun ama<br> Yine de bana gönlün var gibi gibi<br> Yüzüme karşı 'Git', diyorsun<br> ama<br> Sanki gözlerin 'Kal', der gibi gibi<br> Kimse sevemez benim gibi seni<br> Kırk yılda bir gelir Barış gibisi<br> Sen de biraz naz ediyorsun ama<br> Yine de bana gönlün var gibi gibi<br> Yüzüme karşı 'Git' diyorsun ama<br> Sanki gözlerin 'Kal' der gibi gibi<br> Yeter çektiğim i̇nsaf et gayri<br> Senin bana gönlün var gibi gibi<br>" },
+    { title: "Resimdeki Gözyaşları – Cem Karaca", lyrics: "" },
+    { title: "Parla (100. Yıl) – Norm Ender", lyrics: "" },
+    { title: "When The Saints Go Marchining /ANADOLU", lyrics: "" },
+  ];
+
+    const songContainer = $('<div class="container"></div>'); // Kapsayıcı bir div eklendi
+    $('music').append(songContainer); // Kapsayıcıyı body'e ekle
+  
+    songs.forEach((song, index) => {
+      const songElement = $(`
+        <div class="mb-3"> 
+          <button class="btn custom-btn  btn-block" type="button" data-toggle="collapse" data-target="#collapseLyrics${index}" aria-expanded="false" aria-controls="collapseLyrics${index}">
+            ${song.title}
+          </button>
+          <div class="collapse" id="collapseLyrics${index}">
+            <div class="card custom-card card-body mt-2">
+            <p>
+              ${song.lyrics}
+              </p>
             </div>
           </div>
-        `);
-    
-        songContainer.append(songElement); // Şarkı elementini kapsayıcıya ekle
-      });
+        </div>
+      `);
+  
+      songContainer.append(songElement); // Şarkı elementini kapsayıcıya ekle
     });
-    
+  });
+  
