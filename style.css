@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat';
     font-size: 4vh;
+    
 }
 
 .yazi {
@@ -17,9 +18,9 @@ body {
 }
 
 .sef {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vh;
+    margin-right: 3.5vh;
+    margin-left: 3.5vh;
+margin-top:6vh ;
     padding: 10px;
     background-color: #282523;
     border-radius: 3vh;
@@ -28,25 +29,44 @@ body {
 .sef p {
 
 }
-
+.custom-card{
+    background-color: #282523!important;
+    border-color: #282523;
+    color: #d7c2b8;
+    border: 1px solid #d7c2b8!important;
+    border-radius: 3vh!important;
+}
 .bg-dark-custom {
     background-color: #574236;
 }
+.custom-btn{
 
+    background-color: #282523!important;
+    border-color: #282523!important;
+    color: #d7c2b8!important;
+    border-radius: 3vh!important;
+}
+.custom-btn:hover{
+    border: 1px solid #d7c2b8!important;
+
+}
+.iyi{
+    color: #d7c2b8;
+    font-size: 1vh;
+}
 @media (max-width: 700px) {
     .yazi {
 
-        margin-top: 11vh;
+        margin-top: 7vh;
     }
 
     .yazi h1 {
         
-        font-size: 5vh;
+        font-size: 4.5vh;
     }
 
     .sef {
 
-        margin-left: 2vh;
         color: #d7c2b8;
 
     }
@@ -55,10 +75,16 @@ body {
         justify-content: center;
         /* Yatay ortalama */
         align-items: center;
-        font-size: 4vh;
+        font-size: 3vh;
+        font-weight: bold; 
     }
     .sef p {
-        font-size: 2vh;
+        font-size: 2.2vh;
         color: #d7c2b8;
+    }
+    .iyi h1{
+        font-size: 4vh;
+        font-weight: bold; 
+        margin-top: 7vh;
     }
 }

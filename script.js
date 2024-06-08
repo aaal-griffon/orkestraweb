@@ -13,16 +13,16 @@ $(document).ready(function() {
       { title: "Şarkı 2", lyrics: "Sözler 2..." }    ];
   
       const songContainer = $('<div class="container"></div>'); // Kapsayıcı bir div eklendi
-      $('body').append(songContainer); // Kapsayıcıyı body'e ekle
+      $('music').append(songContainer); // Kapsayıcıyı body'e ekle
     
       songs.forEach((song, index) => {
         const songElement = $(`
           <div class="mb-3"> 
-            <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapseLyrics${index}" aria-expanded="false" aria-controls="collapseLyrics${index}">
+            <button class="btn custom-btn  btn-block" type="button" data-toggle="collapse" data-target="#collapseLyrics${index}" aria-expanded="false" aria-controls="collapseLyrics${index}">
               ${song.title}
             </button>
             <div class="collapse" id="collapseLyrics${index}">
-              <div class="card card-body mt-2">
+              <div class="card custom-card card-body mt-2">
                 ${song.lyrics}
               </div>
             </div>
